@@ -1,3 +1,3 @@
 # Algorithm
 
-Solution for algorithm problem in codeground.
+Solution for algorithm problem in codeground and basic data struct & algorithm.
