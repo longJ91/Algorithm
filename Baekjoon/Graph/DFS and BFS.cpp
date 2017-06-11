@@ -1,5 +1,5 @@
 // 문제 : https://www.acmicpc.net/problem/1260
-// Graph, DFS - Stack 활용, BFS - Queue 활용, sort도 해줘야함, 단 이거 완벽하지않음 문제점 못찾음. 백준 모범답 참고하고 재귀 사용도 고려
+// Graph, DFS - Stack 활용, BFS - Queue 활용, sort도 해줘야함, a b - b a 쌍방향으로 저장 해야함
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -16,6 +16,8 @@ int main() {
 		cin >> node >> edge;
 		DFSE[node].push(edge);
 		BFSE[node].push(edge);
+		DFSE[edge].push(node);
+		BFSE[edge].push(node);
 	}
 	for (int i = 1; i <= N; i++) {
 		vector<int> temp;
@@ -56,6 +58,7 @@ int main() {
 				flag = false;
 				break;
 			}
+			DFSE[v].pop();
 		}
 		if (flag) S.pop();
 	}
