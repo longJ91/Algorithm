@@ -1,3 +1,5 @@
+//Minimum Spanning Tree 이용
+//최소 신장 트리를 구하면 간선 자체가 최소 이므로 간선들의 중간값이 최소가 되는 조건은 무조건 맞아 떨어진다.
 #include <iostream>
 #include <vector>
 #include <algorithm>
