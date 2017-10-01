@@ -1,5 +1,6 @@
 // 문제 : https://www.acmicpc.net/problem/2240
 // dp
+// 한번에 품!
 #include <iostream>
 #include <cstring>
 #include <algorithm>
