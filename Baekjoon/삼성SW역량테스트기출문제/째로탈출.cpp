@@ -1,6 +1,5 @@
-// 문제 : https://www.acmicpc.net/problem/13460
+// 문제 : https://www.acmicpc.net/problem/13459
 // 삼성 SW 기출
-// 접근 잘못함 시간 초과 - DFS ?
 #include <iostream>
 #include <vector>
 #include <string>
@@ -345,7 +344,8 @@ int main() {
 	go(2, 1, map, red, blue);
 	go(3, 1, map, red, blue);
 	go(4, 1, map, red, blue);
-	if (result == 11) result = -1;
+	if (result == 11) result = 0;
+	else result = 1;
 	cout << result;
 	return 1;
 }
